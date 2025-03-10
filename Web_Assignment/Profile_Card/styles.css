@@ -1,0 +1,99 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(251, 251, 251, 0.1);
+    overflow: hidden;
+    transition: transform 0.6s, box-shadow 0.3s;
+    max-width: 400px;    
+    text-align: center;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(250, 250, 250, 0.521);
+}
+
+.profile-img {
+    margin-top: 20px;
+}
+
+.profile-img img {
+    border-radius: 50%;
+    width: 100px; /* image size */
+    height: 100px; /* image size */
+    object-fit: cover;
+    border: 4px solid #4a90e2; /* border color */
+}
+
+.profile-info {
+    margin: 20px 0;
+}
+
+h2 {
+    margin: 10px 0;
+    color: #327686;
+}
+
+h3 {
+    margin: 10px 0;
+    font-weight: normal;
+    color: #999;
+}
+
+p {
+    color: #666;
+    padding: 0 20px; 
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.social-icon {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #00000098;
+    font-size: 24px;
+    transition: color 0.5s;
+}
+
+.social-icon:hover {
+    color: #3b7ddd; 
+}
+/* Responsive styles */
+@media (max-width: 400px) {
+    .profile-card {
+        width: 90%;
+    }
+
+    .profile-img img {
+        width: 80px;
+        height: 80px;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+}
